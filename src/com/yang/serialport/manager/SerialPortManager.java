@@ -21,7 +21,7 @@ import gnu.io.UnsupportedCommOperationException;
 
 /**
  * 串口管理
- * 
+ * url = https://blog.csdn.net/kong_gu_you_lan/article/details/80589859#commentBox
  * @author yangle
  */
 @SuppressWarnings("all")
@@ -188,6 +188,7 @@ public class SerialPortManager {
 			this.mDataAvailableListener = mDataAvailableListener;
 		}
 
+		@Override
 		public void serialEvent(SerialPortEvent serialPortEvent) {
 			switch (serialPortEvent.getEventType()) {
 			case SerialPortEvent.DATA_AVAILABLE: // 1.串口存在有效数据
